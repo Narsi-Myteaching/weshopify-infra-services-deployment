@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: weshopify-zipkin-service
+  name: weshopify-zipkin-service
+spec:
+  ports:
+    - name: "9411"
+      port: 9411
+      targetPort: 9411
+  selector:
+    app: weshopify-zipkin-service
+status:
+  loadBalancer: {}
