@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  labels:
+    app: weshopify-registry-svc
+  name: weshopify-registry-svc
+
+spec:
+  replicas: 1
+  matchLabels: 
+   app: weshopify-registry-svc
+  template: 
+   metadata: 
+    labels: 
+      app: weshopify-registry-svc
+   spec:   
+    containers:
+      - env:
+          - name: REGISTRY_PREF_IP
+            value: "false"
+        image: narsimybooks/weshopify-service-registry-img:latest
+        name: weshopify-registry
+        ports:
+          - containerPort: 8761
+    restartPolicy: OnFailure
+status: {}
