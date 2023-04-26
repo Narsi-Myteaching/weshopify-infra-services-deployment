@@ -24,4 +24,4 @@ spec:
               value: weshopify-registry-svc
             - name: SERVICE_REGISTRY_PORT
               value: "8761"
-          restartPolicy: Always
+      restartPolicy: Always
