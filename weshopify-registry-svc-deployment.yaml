@@ -7,8 +7,9 @@ metadata:
 
 spec:
   replicas: 1
-  matchLabels: 
-   app: weshopify-registry-svc
+  selector:
+   matchLabels: 
+    app: weshopify-registry-svc
   template: 
    metadata: 
     labels: 
