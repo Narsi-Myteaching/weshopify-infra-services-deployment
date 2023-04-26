@@ -23,5 +23,5 @@ spec:
         name: weshopify-registry
         ports:
           - containerPort: 8761
-    restartPolicy: OnFailure
+    restartPolicy: Always
 status: {}
