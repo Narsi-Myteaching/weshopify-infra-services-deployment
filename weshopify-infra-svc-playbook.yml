@@ -8,6 +8,8 @@
 
    - name: copy the manifest files from ansible to k8s-master
      copy: src=/opt/weshopify-infra-svc-deploy  dest=infra-svc-dir
+   - name: remove ansible-playbook.yml
+     shell: echo admin | sudo rm -f /home/k8s-admin/infra-svc-dir/weshopify-infra-svc-deploy/weshopify-infra-svc-playbook.yml
 
    - name: execute the manifest files on k8s-master
      shell: echo admin | sudo -S kubectl apply -f /home/k8s-admin/infra-svc-dir/weshopify-infra-svc-deploy
