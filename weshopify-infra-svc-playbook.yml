@@ -15,5 +15,5 @@
    - name: execute the manifest files on k8s-master
      shell: echo admin | sudo -S kubectl apply -f /home/k8s-admin/infra-svc-dir/weshopify-infra-svc-deploy
 
-   - name: remove the infra-svc-dir
-     shell: rm -rf infra-svc-dir
+   #- name: remove the infra-svc-dir
+    # shell: rm -rf infra-svc-dir
