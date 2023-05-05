@@ -5,6 +5,7 @@ metadata:
     app: weshopify-registry-svc
   name: weshopify-registry-svc
 spec:
+  type: NodePort
   ports:
     - name: "8761"
       port: 8761

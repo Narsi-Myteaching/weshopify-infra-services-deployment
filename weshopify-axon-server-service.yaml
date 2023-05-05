@@ -5,6 +5,7 @@ metadata:
     app: weshopify-axon-server
   name: weshopify-axon-server
 spec:
+  type: NodePort
   ports:
     - name: "8124"
       port: 8124

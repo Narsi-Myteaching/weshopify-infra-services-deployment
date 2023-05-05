@@ -5,6 +5,7 @@ metadata:
     app: weshopify-gateway-svc
   name: weshopify-gateway-svc
 spec:
+  type: NodePort
   ports:
     - name: "5012"
       port: 5012
